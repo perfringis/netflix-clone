@@ -1,7 +1,10 @@
-import { FC, ReactElement } from "react";
+import { ChangeEvent, FC, ReactElement, useState } from "react";
 import Input from "../components/Input";
 
 const LoginLayout: FC<any> = (): ReactElement => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div className="relative h-full w-full bg-[url('/images/background.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="bg-black w-full h-full md:bg-opacity-50">
@@ -14,12 +17,33 @@ const LoginLayout: FC<any> = (): ReactElement => {
             <div className="flex flex-col gap-4">
               <Input
                 label="Email or phone number"
-                onChange={() => {}}
+                onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                  setEmail(e.target.value);
+                }}
                 id="email"
                 type="email"
-                value=""
+                value={email}
+              />
+              <Input
+                label="Password"
+                onChange={(e: ChangeEvent<HTMLInputElement>) => {
+                  setPassword(e.target.value);
+                }}
+                id="password"
+                type="password"
+                value={password}
               />
             </div>
+            <button className="bg-monza py-3 text-base text-white rounded w-full mt-10">
+              Sign In
+            </button>
+
+
+            <div>
+              <input/>
+              <label>Remeber me</label>
+            </div>
+
           </div>
         </div>
       </div>
@@ -28,3 +52,4 @@ const LoginLayout: FC<any> = (): ReactElement => {
 };
 
 export default LoginLayout;
+
