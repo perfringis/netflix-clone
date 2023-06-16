@@ -38,12 +38,25 @@ const LoginLayout: FC<any> = (): ReactElement => {
               Sign In
             </button>
 
-
             <div>
-              <input/>
-              <label>Remeber me</label>
+              <input
+                id="remember"
+                type="checkbox"
+                className="
+                appearance-none
+                w-4
+                h-4
+                bg-[#737373]
+                rounded
+                border-0
+                border-none
+                focus:outline-none
+                focus:bg-white
+                checked:content-['\u2713']
+              "
+              />
+              <label className="text-[#b3b3b3]">Remember me</label>
             </div>
-
           </div>
         </div>
       </div>
@@ -52,4 +65,3 @@ const LoginLayout: FC<any> = (): ReactElement => {
 };
 
 export default LoginLayout;
-
