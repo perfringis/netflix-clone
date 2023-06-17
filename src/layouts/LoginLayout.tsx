@@ -37,48 +37,26 @@ const LoginLayout: FC<any> = (): ReactElement => {
             <button className="bg-monza py-3 text-base text-white rounded w-full mt-10">
               Sign In
             </button>
-            {/* <div className="flex">
+            <div className="flex flex-row items-center justify-center gap-2 ">
               <input
+                id="remember"
                 type="checkbox"
-                id="some_id"
                 className="
-                  relative
-                  peer
-                  shrink-0
                   appearance-none
-                  w-4
-                  h-4
-                  rounded
-                  bg-[#737373]
-                  mt-1
-                  checked:bg-transparent
-                  checked:border-0
-                  disabled:border-steel-400
-                  disabled:bg-steel-400"
+                  before:flex
+                  before:items-center
+                  before:justify-center
+                  before:w-4
+                  before:h-4
+                  before:bg-[#737373]
+                  before:rounded
+                  before:text-black
+                  checked:before:bg-[#737373]
+                  checked:before:content-['\2713']
+                  before:focus:bg-white"
               />
-              <label htmlFor="some_id">This is the checkbox label</label>
-              <svg
-                className="
-                  absolute 
-                  w-4
-                  h-4
-                  mt-1
-                  hidden 
-                  peer-checked:block
-                  bg-[#737373]
-                  rounded
-                  "
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="4"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polyline points="20 6 9 17 4 12"></polyline>
-              </svg>
-            </div> */}
+              <label htmlFor="remember" className="text-[#b3b3b3] text-[13px]">Remember me</label>
+            </div>
           </div>
         </div>
       </div>
