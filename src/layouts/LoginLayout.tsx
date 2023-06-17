@@ -37,26 +37,48 @@ const LoginLayout: FC<any> = (): ReactElement => {
             <button className="bg-monza py-3 text-base text-white rounded w-full mt-10">
               Sign In
             </button>
-
-            <div>
+            {/* <div className="flex">
               <input
-                id="remember"
                 type="checkbox"
+                id="some_id"
                 className="
-                appearance-none
-                w-4
-                h-4
-                bg-[#737373]
-                rounded
-                border-0
-                border-none
-                focus:outline-none
-                focus:bg-white
-                checked:content-['\u2713']
-              "
+                  relative
+                  peer
+                  shrink-0
+                  appearance-none
+                  w-4
+                  h-4
+                  rounded
+                  bg-[#737373]
+                  mt-1
+                  checked:bg-transparent
+                  checked:border-0
+                  disabled:border-steel-400
+                  disabled:bg-steel-400"
               />
-              <label className="text-[#b3b3b3]">Remember me</label>
-            </div>
+              <label htmlFor="some_id">This is the checkbox label</label>
+              <svg
+                className="
+                  absolute 
+                  w-4
+                  h-4
+                  mt-1
+                  hidden 
+                  peer-checked:block
+                  bg-[#737373]
+                  rounded
+                  "
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="4"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+            </div> */}
           </div>
         </div>
       </div>
